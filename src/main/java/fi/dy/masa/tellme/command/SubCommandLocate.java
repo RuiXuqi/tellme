@@ -27,6 +27,7 @@ import fi.dy.masa.tellme.util.WorldUtils;
 import fi.dy.masa.tellme.util.chunkprocessor.Locate;
 import fi.dy.masa.tellme.util.chunkprocessor.Locate.LocateType;
 import fi.dy.masa.tellme.util.chunkprocessor.Locate.OutputType;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class SubCommandLocate extends SubCommand
 {
@@ -89,7 +90,7 @@ public class SubCommandLocate extends SubCommand
             }
             else if (args[0].equals("entity"))
             {
-                return CommandBase.getListOfStringsMatchingLastWord(args, EntityList.REGISTRY.getKeys());
+                return CommandBase.getListOfStringsMatchingLastWord(args, ForgeRegistries.ENTITIES.getKeys());
             }
             else if (args[0].equals("te"))
             {

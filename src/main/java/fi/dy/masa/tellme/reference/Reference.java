@@ -4,5 +4,5 @@ public class Reference
 {
     public static final String MOD_ID = "tellme";
     public static final String MOD_NAME = "TellMe";
-    public static final String MOD_VERSION = "@MOD_VERSION@";
+    public static final String MOD_VERSION = Tags.VERSION;
 }
